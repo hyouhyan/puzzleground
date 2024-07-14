@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マインスイーパー</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="setting">
+            <id="w" value="9" min="2" max="50">
+            <id="h" value="9" min="2" max="25">
+            <id="b" value="10" min="1" max="1250">
+            <span class="bombCount">0</span>
+        </div>
+        <div id="setting2">
+            <div id="btn">
+                スタート
+            </div>
+            <span id="time" class="timer">00:00</span>
+        </div>
+        <table id="board">
+        </table>
+        <h3 id="result"></h3>
+        <div id="text">
+            <h3>
+                <操作>
+            </h3>
+            <p>左クリック: マスを開ける</p>
+            <p>右クリック: <span class="flag"></span>マークを付ける</p>
+            <h3>
+                <ボタン>
+            </h3>
+            <p>スタート: ゲームスタート</p>
+            <p>戻る: メインページに戻る</p>
+            <h3>
+                <表示>
+            </h3>
+            <p><span class="bombCount"></span>: 残り爆弾数</p>
+            <p><span class="timer"></span>: 経過時間</p>
+        </div>
+        <div id="button" onclick="location.href='../'">
+            戻る
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="maketweet.js"></script>
+</body>
+
+</html>
