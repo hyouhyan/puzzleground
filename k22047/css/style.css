@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-btn{
+    margin: 0 0 0 auto;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: #d7e1ec;
+}
+
+.gameBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 454px;
+    height: 454px;
+}
+
+.square {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    cursor: pointer;
+    ;
+}
+
+/*
+枠線と段落下げ
+*/
+.square:nth-child(-n + 9) {
+    border-width: 4px 4px 4px 0;
+    height: 54px;
+}
+
+.square:nth-child(9n + 1) {
+    border-width: 0 4px 4px 4px;
+    width: 54px;
+}
+
+.square:first-child {
+    border-width: 4px;
+    width: 54px;
+    height: 54px;
+}
+
+.number[data-state="1"] {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0px;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: rgba(57, 186, 232, 1);
+}
+
+.number[data-state="2"] {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0px;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: rgba(185, 237, 248, 1);
+}
+
+.number[data-state="3"] {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0px;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: rgb(164, 212, 31);
+    ;
+}
+
+.numberColor {
+    color: rgb(0, 0, 0);
+}
+
+.DColor {
+    color: rgb(17, 60, 160);
+}
+
+.redColor {
+    color: rgb(133, 42, 42);
+}
+
+#square-template {
+    display: none;
+}
+
+.buttonArea {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    background: rgba(185, 237, 248, 1);
+}
+
+.buttons2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    background: rgb(164, 212, 31);
+}
+
+.buttons3 {
+    display: block;
+    width: 160px;
+    height: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    background: rgba(185, 237, 248, 1);
+}
+
+.buttons4 {
+    display: block;
+    width: 160px;
+    height: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    background: rgb(164, 212, 31);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.eraser {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(185, 237, 248, 1) url(./img/eraser.png) center / 40px auto;
+}
+
+.eraser2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgb(164, 212, 31) url(./img/eraser.png) center / 40px auto;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: dimgray;
+    padding-top: 5px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    display: flex;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+}
+
+li {
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+    font-size: x-large;
+}
+
+li:hover {
+    color: rgb(214, 237, 248);
+}
+
+.buttonArea2 {
+    margin: center;
+    margin-left: 276px;
+}
+
+.noneButton {
+    display: none;
+}
